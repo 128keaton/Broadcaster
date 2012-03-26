@@ -131,6 +131,7 @@ public class Broadcaster extends JavaPlugin {
 			taskID = Bukkit.getScheduler().scheduleSyncRepeatingTask(plugin, runner, 0, interval * 20);
 	}
 	
+	//This needs to be updated for 1.2.4 Chat Color codes...
 	private String replaceColors(String input) {
 		String output = "";
 		output = input.replaceAll("&f", ChatColor.WHITE + "");
